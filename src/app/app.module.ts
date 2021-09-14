@@ -8,6 +8,8 @@ import { CityPickerComponent } from './city-picker/city-picker.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     AppRoutingModule,
     MatButtonModule, 
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

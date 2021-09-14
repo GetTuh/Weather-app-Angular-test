@@ -1,5 +1,5 @@
 <app-city-picker (cityName)="getWeatherData($event) " *ngIf="!loading"></app-city-picker>
-<div class="loading-screen" *ngIf='!displayNameIfLoaded()&&loading'> Loading...</div>
+<div class="loading-screen" *ngIf='!displayNameIfLoaded()&&loading'>Now Loading...</div>
 <div class='hero' *ngIf="displayNameIfLoaded()">
 <div class='grid-container'>
     <app-info-box [weather]="weatherData" class="grid-item grid-main"></app-info-box>

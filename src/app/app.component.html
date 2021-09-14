@@ -1,4 +1,4 @@
-@ngx-env/core<app-city-picker></app-city-picker>
+<app-city-picker (cityName)="getWeatherData($event)"></app-city-picker>
 <!-- <div class="loading-screen" *ngIf='!displayNameIfLoaded()'> Loading...</div>
 <div class='hero' *ngIf="displayNameIfLoaded()">
 <div class="header">Welcome from 'adjective' {{displayNameIfLoaded()}}</div>

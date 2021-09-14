@@ -1,1 +1,16 @@
-<p>city-picker works!</p>
+<div class="flexbox-container">
+    <p class="flexbox-item">Pick your city!</p>
+    <div class="flexbox-item">
+        <input #city/>
+        <div class="btn-group btn-group-toggle">
+            <label class="btn-success" ngbButtonLabel="ngbButtonLabel">
+                <input type="checkbox"  (click)="checkWeather(city.value)" ngbButton="ngbButton">
+                Show weather!
+            </label>
+            <label class="btn-primary" ngbButtonLabel="ngbButtonLabel">
+                <input type="checkbox" ngbButton="ngbButton">
+                Locate me
+            </label>
+        </div>
+    </div>
+</div>

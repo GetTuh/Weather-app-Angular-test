@@ -8,11 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
@@ -25,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "@ngx-env/core": "^1.1.0",
     "bootstrap": "^4.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
@@ -34,6 +30,7 @@
     "@angular-devkit/build-angular": "~12.2.5",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
+    "@ngx-env/builder": "^1.1.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^16.9.1",
     "jasmine-core": "~3.8.0",

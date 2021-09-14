@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoBoxComponent } from './info-box/info-box.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CityPickerComponent } from './city-picker/city-picker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoBoxComponent
+    InfoBoxComponent,
+    CityPickerComponent
   ],
   imports: [
     BrowserModule,

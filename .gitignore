@@ -44,5 +44,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#Environment Variables
-src/environments/environment.ts
+.vercel
+.env

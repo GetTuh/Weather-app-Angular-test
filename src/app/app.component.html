@@ -1,13 +1,12 @@
 <app-city-picker (cityName)="getWeatherData($event) " *ngIf="!loading"></app-city-picker>
 <div class="loading-screen" *ngIf='!displayNameIfLoaded()&&loading'> Loading...</div>
 <div class='hero' *ngIf="displayNameIfLoaded()">
-<div class="header">Welcome from 'adjective' {{displayNameIfLoaded()}}</div>
 <div class='grid-container'>
     <app-info-box [weather]="weatherData" class="grid-item grid-main"></app-info-box>
 
-    <app-info-box class="grid-item"></app-info-box>
+    <div class="grid-item"></div>
 
-    <app-info-box class="grid-item"></app-info-box>
+    <div class="grid-item"></div>
 </div>
 </div>
 <router-outlet></router-outlet>

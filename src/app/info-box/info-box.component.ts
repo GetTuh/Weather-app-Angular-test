@@ -10,7 +10,12 @@ export class InfoBoxComponent implements OnChanges {
   info='loading'
   @Input() weather:any
   ngOnChanges(changes:SimpleChanges){
-    this.info=this.weather.name
+    try {
+      this.info=this.weather.name
+    }
+    catch(error){
+      this.info='loading'
+    }
   }
 }
 

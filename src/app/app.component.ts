@@ -8,12 +8,12 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title:any = 'MachineTestAngular';
   weatherData:any
+  displayNameIfLoaded: any=()=>{try{return this.weatherData.name}catch(e){return 'loading'}}
   constructor(){
-    let city ='tokyo'
-    let url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${environment.OPENWEATHER_API_KEY}`
     const weatherData=async(city:string)=>{
+      const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${environment.OPENWEATHER_API_KEY}`
       this.weatherData = await (await fetch(url)).json()
     }
-    weatherData('a')
+    weatherData('Tokyo')
   }
 }

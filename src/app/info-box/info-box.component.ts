@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-info-box',
   templateUrl: './info-box.component.html',
@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   
 })
 export class InfoBoxComponent  {
-
-info='info'
+info='a'
 }

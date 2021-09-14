@@ -1,0 +1,13 @@
+.grid-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.grid-item{
+    width: 10rem;
+    background-color: gray;
+    margin: 2rem;
+}
+.grid-main{
+    width: 30rem;
+}

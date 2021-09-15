@@ -1,11 +1,16 @@
 <div class="flexbox-container">
     <p class="flexbox-item">Pick your city!</p>
-    <div class="flexbox-item">
-        <mat-form-field class="form-field" appearance='outline' >
-             <input matInput type="text"  class='input' placeholder ='type the city!'#city/>
+    <mat-card>
+        <div class="flexbox-item">
+            <mat-form-field class="form-field " appearance='outline'>
+                <input matInput="matInput" type="text" class='input' placeholder='type the city!' #city/>
             </mat-form-field>
-       
-                <button mat-raised-button class='show-button flexbox-item' color="warn" (click)="checkWeather(city.value)" >
+            <button mat-raised-button="mat-raised-button" class='show-button' color="warn" (click)="checkWeather(city.value)">
                 Show weather!</button>
         </div>
-    </div>
+    </mat-card>
+    <!-- <div class="flexbox-item">
+            <app-selected-cities cityName='Tokyo'></app-selected-cities>
+            <app-selected-cities cityName='Warsaw'></app-selected-cities>
+        </div> -->
+</div>

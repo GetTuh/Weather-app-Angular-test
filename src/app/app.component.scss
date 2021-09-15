@@ -11,3 +11,17 @@
 .grid-main{
     width: 30rem;
 }
+.loading-screen{
+    height: 100%;
+    padding: 0;
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.loading-screen-inside{
+    width: 20rem;
+    text-align: center;
+
+}

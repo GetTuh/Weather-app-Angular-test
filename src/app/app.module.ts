@@ -8,13 +8,17 @@ import { CityPickerComponent } from './city-picker/city-picker.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatCardModule} from '@angular/material/card';
+import { SelectedCitiesComponent } from './selected-cities/selected-cities.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoBoxComponent,
-    CityPickerComponent
+    CityPickerComponent,
+    SelectedCitiesComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +26,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     MatButtonModule, 
     MatInputModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

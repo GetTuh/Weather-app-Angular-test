@@ -1,12 +1,15 @@
 <app-city-picker (cityName)="getWeatherData($event) " *ngIf="!loading"></app-city-picker>
-<div class="loading-screen" *ngIf='!displayNameIfLoaded()&&loading'>Now Loading...</div>
-<div class='hero' *ngIf="displayNameIfLoaded()">
-<div class='grid-container'>
-    <app-info-box [weather]="weatherData" class="grid-item grid-main"></app-info-box>
-
-    <div class="grid-item"></div>
-
-    <div class="grid-item"></div>
+<div class="loading-screen" *ngIf='!displayNameIfLoaded()&&loading'>
+    <mat-card class="loading-screen-inside">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>Getting data...</mat-card>
 </div>
+<div class='hero' *ngIf="displayNameIfLoaded()">
+    <div class='grid-container'>
+        <app-info-box [weather]="weatherData" class="grid-item grid-main"></app-info-box>
+
+        <div class="grid-item"></div>
+
+        <div class="grid-item"></div>
+    </div>
 </div>
 <router-outlet></router-outlet>

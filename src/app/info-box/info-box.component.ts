@@ -16,6 +16,7 @@ export class InfoBoxComponent implements OnChanges {
       this.info=this.weather
       this.main=this.adjective(this.info.weather[0].main)
       this.icon=`http://openweathermap.org/img/wn/${this.info.weather[0].icon}.png`
+      console.log(this.info)
   }
   adjective=(main:string)=>{
     switch (main.toLowerCase()) {

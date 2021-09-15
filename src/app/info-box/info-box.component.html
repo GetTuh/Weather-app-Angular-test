@@ -1,3 +1,14 @@
-<p>Welcome from {{main}} {{info.name}}</p>
-<img [src]="icon" >
-<!-- {{title}} -->
+<mat-card>
+    <mat-card-title class="box">
+    Welcome from
+        {{main}}&nbsp;
+        <b>
+        {{info.name}}!</b> <img [src]="icon"></mat-card-title>
+        <div class="box">
+   
+It's <b> &nbsp;{{info.main.temp.toFixed(1)}}°C</b>, but feels like <b>&nbsp;{{info.main.feels_like.toFixed(1)}}°C!</b>
+</div>
+<mat-card-subtitle class="box">
+    Looks like there's &nbsp;<b>{{info.weather[0].description}}</b> &nbsp;right now!
+</mat-card-subtitle>
+</mat-card>

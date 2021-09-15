@@ -15,7 +15,7 @@ export class AppComponent  {
   cityName:string | undefined='';
   getWeatherData=async(city:string)=>{
     this.loading=true
-    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${environment.OPENWEATHER_API_KEY}`
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${environment.OPENWEATHER_API_KEY}&units=metric`
     this.weatherData = await (await fetch(url)).json()
   }
   constructor(){
